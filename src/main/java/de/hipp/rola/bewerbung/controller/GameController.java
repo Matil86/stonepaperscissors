@@ -20,7 +20,7 @@ public class GameController {
         for (Player player : players) {
             System.out.println(player.getName() + " hat " + player.getWins() + " mal gewonnen");
         }
-        System.out.println("Es waren " + draw + " unendschienden");
+        System.out.println("Es gab " + draw + " unendschienden");
     }
 
     private void handlePlayers(final List<Player> players) {
