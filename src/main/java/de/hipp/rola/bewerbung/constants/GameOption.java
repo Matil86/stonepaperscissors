@@ -2,6 +2,11 @@ package de.hipp.rola.bewerbung.constants;
 
 import java.util.Random;
 
+/**
+ * Enum of possible GameOptions that someone could choose
+ * <p>
+ * Please not that if you add something here, that you also need to add a Rule in the RulesController
+ */
 public enum GameOption {
     PAPER(1),
     STONE(2),
@@ -9,10 +14,15 @@ public enum GameOption {
 
     private int id;
 
-    private GameOption(int id, GameOption... winsagainst) {
+    private GameOption(int id) {
         this.id = id;
     }
 
+    /**
+     * Chooses randomly one of the Options
+     *
+     * @return a randomly chosen GameOption
+     */
     public static GameOption getRandomOption() {
         int max = values().length - 1;
         int index = new Random().nextInt(max + 1);

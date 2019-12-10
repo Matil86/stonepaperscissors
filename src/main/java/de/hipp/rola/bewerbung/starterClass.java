@@ -7,6 +7,9 @@ import de.hipp.rola.bewerbung.unit.Player;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Task for the Job Interview for Rola Security Systems GmbH in Oberhausen
+ */
 public class starterClass {
     public static void main(String[] args) {
         List<Player> players = new ArrayList<Player>();
