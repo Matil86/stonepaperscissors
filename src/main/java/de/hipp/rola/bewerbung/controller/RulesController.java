@@ -13,7 +13,7 @@ import java.util.Map;
  */
 public class RulesController {
 
-    public Map<GameOption, List<GameOption>> winsAgainstMapping = new LinkedHashMap<>();
+    private Map<GameOption, List<GameOption>> winsAgainstMapping = new LinkedHashMap<>();
 
     /**
      * Within this Constructor I create a map to determine which option wins against which options
@@ -51,5 +51,14 @@ public class RulesController {
         }
 
         return winingList.contains(optionToCheck);
+    }
+
+    /**
+     * Getter for the WinMapping
+     *
+     * @return the Map of what wins against what
+     */
+    public Map<GameOption, List<GameOption>> getWinsAgainstMapping() {
+        return winsAgainstMapping;
     }
 }

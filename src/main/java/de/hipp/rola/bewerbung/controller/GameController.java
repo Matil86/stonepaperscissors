@@ -13,8 +13,8 @@ import java.util.Map;
  */
 public class GameController {
 
-    int draw = 0;
-    RulesController rulesController = new RulesController();
+    private int draw = 0;
+    private RulesController rulesController = new RulesController();
 
     /**
      * Lets a List of Players play against each other
@@ -39,7 +39,7 @@ public class GameController {
      *
      * @param players the list of players to walk through
      */
-    private void handlePlayers(final List<Player> players) {
+    void handlePlayers(final List<Player> players) {
         if (players == null || players.isEmpty()) {
             return;
         }
